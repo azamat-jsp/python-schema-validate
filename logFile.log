@@ -1,0 +1,43 @@
+DEBUG:root:True is not of type 'object'
+
+Failed validating 'type' in schema:
+    {'$schema': 'http://json-schema.org/schema#',
+     'properties': {'activity_type': {'type': 'string'},
+                    'finish_time': {'type': 'string'},
+                    'info': {'items': {'properties': {'type': {'type': 'string'},
+                                                      'value': {'type': 'number'}},
+                                       'required': ['type', 'value'],
+                                       'type': 'object'},
+                             'type': 'array'},
+                    'phases_info': {'items': {'properties': {'duration': {'type': 'number'},
+                                                             'percent': {'type': 'number'},
+                                                             'type': {'type': 'string'}},
+                                              'required': ['duration',
+                                                           'percent',
+                                                           'type'],
+                                              'type': 'object'},
+                                    'type': 'array'},
+                    'points': {'items': {'properties': {'x_date': {'type': 'string'},
+                                                        'y_value': {'type': 'number'}},
+                                         'required': ['x_date', 'y_value'],
+                                         'type': 'object'},
+                               'type': 'array'},
+                    'source': {'type': 'string'},
+                    'time_start': {'type': 'string'},
+                    'timestamp': {'type': 'string'},
+                    'type_ranges': {'items': {'properties': {'date': {'type': 'string'},
+                                                             'type': {'type': 'string'}},
+                                              'required': ['date', 'type'],
+                                              'type': 'object'},
+                                    'type': 'array'},
+                    'unique_id': {'type': 'string'}},
+     'required': ['source',
+                  'timestamp',
+                  'finish_time',
+                  'activity_type',
+                  'time_start',
+                  'unique_id'],
+     'type': 'object'}
+
+On instance:
+    True
